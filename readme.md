@@ -71,19 +71,28 @@ Raw Data → Staging Transformations → Dimensional Warehouse → Business KPIs
 
 The project follows a layered analytics pipeline:
 
+```
 Raw Data (CSV)
-        ↓
+      |
+      v
 Raw Schema (raw.retail_transactions)
-        ↓
+      |
+      v
 Staging Transformations (stg.retail_transactions)
-        ↓
+      |
+      v
 Dimensional Warehouse (dw schema)
-        ↓
+      |
+      v
 Fact & Dimension Tables
-        ↓
+      |
+      v
 SQL KPI Analysis
-        ↓
+      |
+      v
 Power BI Dashboard
+```
+
 ---
 
 # Raw Layer (`raw` schema)
