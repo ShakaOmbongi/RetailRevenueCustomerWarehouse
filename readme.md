@@ -67,6 +67,24 @@ The warehouse follows a layered architecture commonly used in modern analytics s
 Raw Data → Staging Transformations → Dimensional Warehouse → Business KPIs → Dashboard
 
 ---
+## Data Pipeline Flow
+
+The project follows a layered analytics pipeline:
+
+Raw Data (CSV)
+        ↓
+Raw Schema (raw.retail_transactions)
+        ↓
+Staging Transformations (stg.retail_transactions)
+        ↓
+Dimensional Warehouse (dw schema)
+        ↓
+Fact & Dimension Tables
+        ↓
+SQL KPI Analysis
+        ↓
+Power BI Dashboard
+---
 
 # Raw Layer (`raw` schema)
 
